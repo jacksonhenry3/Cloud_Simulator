@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="author" content="Jackson Henry">
+		<meta name="keywords" content="JavaScript, light, cloud, clouds, refraction, difraction">
+		<meta name="description" content="Simulation of how light behaves in a cloud">
+		<meta name="viewport" content="width=device-width, height=device-height">
+		<title>Clouds and light</title>
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="button.css">
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	</head>
+<body>
+	<h1 style = 'position:absolute;'>Cloud Simulator</h1>
+		<svg id = 'cloudSim'>
+		</svg>
+		<ul id = 'settings' class="menu" >
+		    <li>
+		      <span class = 'title' onclick = "openClose('settings')">Options</span>
+
+		        <ul class="sub-menu">
+		            <li>
+		                sunniness <input  id = 'sunyness' value = 1 type = 'range' min="0" max="10"></input>
+		            </li>
+		            <li>
+		                ray thickness <input id = 'rayWidth' value = 7 type = 'range' ></input>
+		            </li>
+		            <li>
+		                ray speed 
+		                <input id = 'raySpeed' value = 7 type = 'range'></input>
+		            </li>
+		            <li>
+		                cloud particle size 
+		                <input id = 'radius' value = 30 type = 'range'></input>
+		            </li>
+		        </ul>
+		    </li>
+		</ul>
+<form><input type="button" value="Go Back" onClick="history.go(-1);return true;"></form>
+		
+</body>
+<script type="text/javascript" src = 'cloud.js'></script>
+</html>
