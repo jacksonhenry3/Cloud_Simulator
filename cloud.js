@@ -22,8 +22,8 @@ var cloudParticleRadius = 8,
 	tau                 = 2*Math.PI,//used for conversion and polar coordinates
 	dTheta              = tau/400,
 	svg                 = d3.select("#cloudSim")// add the svg element to body
-							// .attr("width" , svgWidth)
-							// .attr("height", svgHeight)// send down a light ray on click
+							.attr("width" , svgWidth)
+							.attr("height", svgHeight)// send down a light ray on click
 							.on  ("click" , function() 
 								{
 									var m = d3.mouse(this);// gets current mouse locvation on the svg
